@@ -1,0 +1,18 @@
+<div class="box">
+  <table class="table table-dark table-striped table-bordered">
+    <thead>
+      <tr>
+        <th *ngFor="let h of headers">{{h}}</th>
+        <th *ngIf="view">File</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of records">
+        <td *ngFor="let col of row">{{col}}</td>
+        <td><div class="extra">
+          <input type="file"><button>Upload</button>
+        </div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
